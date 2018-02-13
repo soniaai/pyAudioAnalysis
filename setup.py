@@ -27,6 +27,8 @@ setup(
     keywords='audio analysis feature extraction classification segmentation visualization',
 
     packages=find_packages(exclude=['contrib', 'docs', 'tests']),
+    package_dir={'pyAudioAnalysis': 'pyAudioAnalysis'},
+    package_data={'pyAudioAnalysis': ['data/svm*', 'data/gb*', 'data/et*', 'data/hmm*', 'data/knn*', 'data/rf*']},
 
     install_requires=['numpy', 'matplotlib', 'scipy', 'sklearn', 'hmmlearn', 'simplejson', 'eyed3', 'pydub'],
 )
